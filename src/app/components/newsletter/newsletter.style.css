@@ -1,0 +1,23 @@
+
+/*START NEWSLETTER*/
+.newsletter {
+	background-color: #F4F8FE;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.newsletter p,
+.newsletter input,
+.newsletter span {
+	display: inline;
+}
+
+.newsletter input {
+	margin: 0 20px;
+	max-width: 400px;
+}
+
+.newsletter span a {
+	padding: 12px 20px;
+}
+/*END NEWSLETTER*/

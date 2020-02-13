@@ -1,0 +1,182 @@
+
+/*--- START FOOTER TOP ---*/
+.footerTop,
+.footerlinks {
+	border-top: 1px solid #e2e2e2;
+}
+
+.footerlinks,
+.newsletter {
+	padding: 30px 0;
+}
+
+.subscribeText {
+	padding-right: 20px !important;
+}
+
+.subscribeText h1 {
+	font-size: 30px;
+    font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.subscribeBox form {
+	border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    height: 100%;
+    padding-right: 100px;
+    position: relative;
+	height: 44px;
+	margin-top: 18px;
+	width: 100%;
+}
+
+.subscribeBox form > input {
+	width: 100%;
+    padding: 0 10px;
+    border: none;
+    font-size: 14px;
+    color: #777;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+	float: left;
+    height: 100%;
+	max-width: none;
+	background: #fff;
+}
+
+.subscribeBox form > button {
+	position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #4868B8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+    transition: 300ms;
+	line-height: normal;
+	font-weight: 500;
+}
+
+.subscribeBox form > button:hover {
+	background: #196CE1;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 768px) {
+	.linkBox {
+		margin: 5px 0 25px 0;
+	}
+}
+
+.linkBox h1 {
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.linkBox ul li + li {
+	margin-top: 10px;
+}
+
+.linkBox ul li a {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	color: #000;
+	opacity: 0.8;
+}
+
+.linkBox ul li a:hover {
+	opacity: 1;
+}
+/*--- END FOOTER TOP ---*/
+
+/*--- START FOOTER BOTTOM ---*/
+.footerBottom {
+	padding: 30px 0;
+	background: #4868B8;
+	color: #fff;
+}
+
+.footerText {
+	font-size: 14px;
+	line-height: normal;
+}
+
+@media screen and (max-width: 400px) {
+	.footerText {
+		width: 100%;
+		max-width: none;
+		flex: none;
+		margin-bottom: 20px;
+	}
+}
+
+.footerSocials ul {
+	text-align: right;
+}
+
+@media screen and (max-width: 400px) {
+	.footerSocials {
+		width: 100%;
+		max-width: none;
+		flex: none;
+	}
+	
+	.footerSocials ul {
+		text-align: left;
+	}
+}
+
+.footerSocials ul li {
+	display: inline-block;
+}
+
+.footerSocials ul li + li {
+	margin-left: 20px;
+}
+
+.footerSocials ul li a:before {
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: #fff;
+	font-size: 18px;
+	transition: 250ms;
+	opacity: 0.8;
+}
+
+.footerSocials ul li a:hover:before {
+	opacity: 1;
+	transition: 250ms;
+}
+
+.footerSocials ul li a.youtube:before {
+	content: "\f16a";
+}
+
+.footerSocials ul li a.facebook:before {
+	content: "\f09a";
+}
+
+.footerSocials ul li a.twitter:before {
+	content: "\f099";
+}
+
+.footerSocials ul li a.linkedin:before {
+	content: "\f0e1";
+}
+
+.footerSocials ul li a.googleplus:before {
+	content: "\f0d5";
+}
+/*--- END FOOTER BOTTOM ---*/

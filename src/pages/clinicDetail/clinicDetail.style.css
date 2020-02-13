@@ -1,0 +1,24 @@
+.userPanel {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userDetails{
+    height: 450px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.leftColumn{
+    width: 250px;
+}
+
+.rightColumn{
+    width: 500px;
+    height: 500px;
+}

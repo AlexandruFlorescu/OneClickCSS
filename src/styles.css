@@ -1,0 +1,906 @@
+/* You can add global styles to this file, and also import other style files */
+/* ----- START DEFAULT WEBSITE STYLES ----- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.link,
+a {
+	display: inline-block;
+    text-decoration: none;
+	color: #3873bd;
+}
+
+.link:hover,
+a:hover {
+    text-decoration: underline;
+	color: #175fc5;
+}
+
+p {
+    font-size: 16px;
+	line-height: 20px;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+input,
+textarea {
+	padding: 5px 10px;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	background: #fff;
+	transition: 250ms;
+	outline: none;
+	width: 100%;
+	max-width: 600px;
+	color: #999;
+	font-size: 15px;
+}
+
+.newsletter input,
+.newsletter textarea {
+	color: #999;
+}
+
+input:hover,
+textarea:hover {
+	border: 1px solid #d2d2d2;
+	transition: 250ms;
+}
+
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+	background: #fff;
+}
+
+input[type=text],
+input[type=password] {
+	height: 40px;
+}
+
+button {
+	font-size: 16px;
+	padding: 10px 20px;
+    border-radius: 5px;
+    background: #3873bd;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+    transition: 300ms;
+    line-height: normal;
+    font-weight: 500;
+	display: inline-block;
+	outline: none;
+}
+
+button:hover {
+	background: #175fc5;
+    transition: 300ms;
+}
+
+button.link {
+	background: none;
+	padding: 5px;
+}
+
+/*----- START TABLES -----*/
+
+.table {
+	display: inline-block;
+    width: 100%;
+}
+
+.table table {
+	width: 100%;
+}
+
+.table thead {
+	/*n/a*/
+}
+
+.table thead th {
+	/*n/a*/
+}
+
+.table tbody {
+	/*n/a*/
+}
+
+.table tbody tr {
+	/*n/a*/
+}
+
+.table tbody tr td {
+	/*n/a*/
+}
+
+/*----- START CONTAINERS -----*/
+
+/*BiG Container*/
+.containerBig {
+	width: 100%;
+	max-width: 1380px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+	.containerBig {
+		padding: 0 20px;
+	}
+}
+
+/*Standard Container*/
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+	.container {
+		padding: 0 20px;
+	}
+}
+
+/*Small Container*/
+.containerSmall {
+	width: 100%;
+	max-width: 980px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+	.containerSmall {
+		padding: 0 20px;
+	}
+}
+
+/*----- START BUTTONS -----*/
+
+.button a {
+	display: inline-block;
+	padding: 15px 20px;
+	font-size: 15px;
+	font-weight: 300;
+	color: #fff;
+	background: #3873bd;
+	border-radius: 5px;
+	transition: 300ms;
+}
+
+.button a:after {
+	content: "\f101";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin-left: 10px;
+}
+
+.button a:hover {
+	text-decoration: none;
+	background: #175fc5;
+	transition: 300ms;
+}
+
+.button.orange a {
+	background: #F59B43;
+}
+
+.button.orange a:hover {
+	background: #ef943a;
+}
+
+/*----- START GLOBAL CSS -----*/
+
+/*--- START EPIC GRID ---*/
+
+/*--- END EPIC GRID ---*/
+
+/*--- START HEADER ---*/
+
+header {
+	display: inline-block;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #e2e2e2;
+	box-shadow: 0px 3px 7px -6px #000;
+    position: relative;
+    z-index: 1;
+}
+
+.headerTop {
+	margin: 15px 0;
+}
+
+/*start LOGO*/
+.mainLogo {
+	display: inline-block;
+}
+
+.mainLogo a {
+	display: inline-block;
+	height: 60px;
+}
+
+.mainLogo a img {
+	height: 100%;
+	width: auto;
+}
+/*end LOGO*/
+
+/*start TOP RIGHT MENU*/
+.rightMenu {
+	float: right;
+	margin-top: 15px;
+}
+
+.rightMenu i {
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+.rightMenu span {
+	position: relative;
+	top: -3px;
+}
+
+.rightMenu a {
+	display: inline-block;
+}
+
+.myAccount {
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.announceButton {
+	color: #fff;
+	background: #4868B8;
+	border-radius: 4px;
+	padding: 5px 10px;
+	transition: 250ms;
+}
+
+.announceButton:hover {
+	color: #fff;
+	background: #4868B8;
+	text-decoration: none;
+	transition: 250ms;
+}
+/*end TOP RIGHT MENU*/
+
+/*start SLIDER*/
+.slick-slider .slick-list {
+	height: 100%;
+}
+
+.slick-slider .slick-track {
+	height: 100%;
+}
+
+.mainSlide {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.mainSlide button.slick-arrow {
+	position: absolute;
+	left: 50px;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	font-size: 0;
+	z-index: 1;
+	padding: 30px 10px;
+	background: rgba(255, 255, 255, 0.2);
+	transition: 250ms;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.mainSlide:hover button.slick-arrow {
+	left: 20px;
+	opacity: 1;
+	visibility: visible;
+	transition: 250ms;
+}
+
+.mainSlide button.slick-arrow:focus,
+.mainSlide button.slick-arrow:hover {
+	outline: none;
+	transition: 250ms;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.mainSlide button.slick-next {
+	left: auto;
+	right: 50px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.mainSlide:hover button.slick-next {
+	left: auto;
+	right: 20px;
+	opacity: 1;
+	visibility: visible;
+	transition: 250ms;
+}
+
+.mainSlide button.slick-prev:before {
+	content: "\f053";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mainSlide button.slick-next:before {
+	content: "\f054";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mainSlide .slideContent .imgWrap img {
+	width: 100%;
+	height: auto;
+}
+
+.mainSlide .slideContent .imgWrap:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(11, 10, 29, 0.5) 0%, rgba(6, 6, 51, 0.4) 35%, rgba(0,212,255,0.3) 100%);
+	transition: 300ms;
+}
+
+/*On scroll colors change*/
+.mainSlide.darky .slideContent .imgWrap:after {
+	background: linear-gradient(90deg, rgba(11, 10, 29, 0.6) 0%, rgba(6, 6, 51, 0.5) 35%, rgba(0,212,255,0.4) 100%);
+	transition: 300ms;
+}
+
+.mainSlide.darky.dark .slideContent .imgWrap:after {
+	background: linear-gradient(90deg, rgba(11, 10, 29, 0.7) 0%, rgba(6, 6, 51, 0.6) 35%, rgba(0,212,255,0.5) 100%);
+	transition: 300ms;
+}
+
+.mainSlide.darky.dark.darker .slideContent .imgWrap:after {
+	background: linear-gradient(90deg, rgba(11, 10, 29, 0.8) 0%, rgba(6, 6, 51, 0.7) 35%, rgba(0,212,255,0.6) 100%);
+	transition: 300ms;
+}
+/*On scroll colors change*/
+
+.mainSlide .slideContent .slideText {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 30%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+	opacity: 0;
+	visibility: hidden;
+	transition: 550ms;
+}
+
+.mainSlide .slideContent.slick-active .slideText {
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	opacity: 1;
+	visibility: visible;
+	transition: 450ms;
+}
+
+.mainSlide .slideContent .slideText .textWrap {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-left: 3px solid #3873bd;
+}
+
+.mainSlide .slideContent .slideText .textWrap h1 {
+	color: #f2f2f2;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.mainSlide .slideContent .slideText .textWrap p {
+	color: #f2f2f2;
+	text-shadow: 1px 1px 2px #000;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+}
+
+/*--- END HEADER ---*/
+
+main {
+	min-height: 400px;
+	padding: 20px 0;
+}
+
+
+/*START SPECIAL BOXES*/
+.specialBoxes .sbox {
+	padding: 5px;
+}
+
+.specialBoxes .sbox .wrap {
+	background: #d2d2d2;
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+/*END SPECIAL BOXES*/
+
+
+/*
+Main website colors:
+- Open Blue: #196CE1
+- Misty Red: #F93F3F
+- Black Sky: #2D4175
+- Sky Green: #10B660
+*/
+
+/* RESET CSS */
+html, body, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+	color: #353535;
+    line-height: 1;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/*----- BOOTSTRAP FIXES -----*/
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*----- ADDINGS/UPDATES -----*/
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12 {
+	position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px
+}
+
+@media (min-width:450px){
+	.col-xs-1{
+		float:left;
+		width:8.33333%
+	}
+	.col-xs-2{
+		float:left;
+		width:16.66667%
+	}
+	.col-xs-3{
+		float:left;
+		width:25%
+	}
+	.col-xs-4{
+		float:left;
+		width:33.33333%
+	}
+	.col-xs-5{
+		float:left;
+		width:41.66667%
+	}
+	.col-xs-6{
+		float:left;
+		width:50%
+	}
+	.col-xs-7{
+		float:left;
+		width:58.33333%
+	}
+	.col-xs-8{
+		float:left;
+		width:66.66667%
+	}
+	.col-xs-9{
+		float:left;
+		width:75%
+	}
+	.col-xs-10{
+		float:left;
+		width:83.33333%
+	}
+	.col-xs-11{
+		float:left;
+		width:91.66667%
+	}
+	.col-xs-12{
+		float:left;
+		width:100%
+	}
+	.pull-xs-0{
+		right:auto
+	}
+	.pull-xs-1{
+		right:8.33333%
+	}
+	.pull-xs-2{
+		right:16.66667%
+	}
+	.pull-xs-3{
+		right:25%
+	}
+	.pull-xs-4{
+		right:33.33333%
+	}
+	.pull-xs-5{
+		right:41.66667%
+	}
+	.pull-xs-6{
+		right:50%
+	}
+	.pull-xs-7{
+		right:58.33333%
+	}
+	.pull-xs-8{
+		right:66.66667%
+	}
+	.pull-xs-9{
+		right:75%
+	}
+	.pull-xs-10{
+		right:83.33333%
+	}
+	.pull-xs-11{
+		right:91.66667%
+	}
+	.pull-xs-12{
+		right:100%
+	}
+	.push-xs-0{
+		left:auto
+	}
+	.push-xs-1{
+		left:8.33333%
+	}
+	.push-xs-2{
+		left:16.66667%
+	}
+	.push-xs-3{
+		left:25%
+	}
+	.push-xs-4{
+		left:33.33333%
+	}
+	.push-xs-5{
+		left:41.66667%
+	}
+	.push-xs-6{
+		left:50%
+	}
+	.push-xs-7{
+		left:58.33333%
+	}
+	.push-xs-8{
+		left:66.66667%
+	}
+	.push-xs-9{
+		left:75%
+	}
+	.push-xs-10{
+		left:83.33333%
+	}
+	.push-xs-11{
+		left:91.66667%
+	}
+	.push-xs-12{
+		left:100%
+	}
+	.offset-xs-1{
+		margin-left:8.33333%
+	}
+	.offset-xs-2{
+		margin-left:16.66667%
+	}
+	.offset-xs-3{
+		margin-left:25%
+	}
+	.offset-xs-4{
+		margin-left:33.33333%
+	}
+	.offset-xs-5{
+		margin-left:41.66667%
+	}
+	.offset-xs-6{
+		margin-left:50%
+	}
+	.offset-xs-7{
+		margin-left:58.33333%
+	}
+	.offset-xs-8{
+		margin-left:66.66667%
+	}
+	.offset-xs-9{
+		margin-left:75%
+	}
+	.offset-xs-10{
+		margin-left:83.33333%
+	}
+	.offset-xs-11{
+		margin-left:91.66667%
+	}
+}
+
+/*----- START MY GRID -----*/
+/*START POSITIONING*/
+.tcenter {text-align:center;}
+.tright {text-align:right;}
+.tleft {text-align:left;}
+.hide {display: none;}
+
+/*START BOXES*/
+.box {display: inline-block; width: 100%; margin-bottom: 20px;}
+.boxm {display: inline-block; width: 100%; padding-top: 20px;}
+.box1of8 {float: left; width: 10.75%; margin-right: 2%;}
+.box2of8 {float: left; width: 23.5%; margin-right: 2%;}
+.box3of8 {float: left; width: 36.25%; margin-right: 2%;}
+.box4of8 {float: left; width: 49%; margin-right: 2%;}
+.box5of8 {float: left; width: 61.75%; margin-right: 2%;}
+.box6of8 {float: left; width: 74.5%; margin-right: 2%;}
+.box7of8 {float: left; width: 87.25%; margin-right: 2%;}
+.box8of8 {float: left; width: 100%;}
+.box1of8:last-child,
+.box2of8:last-child,
+.box3of8:last-child,
+.box4of8:last-child,
+.box5of8:last-child,
+.box6of8:last-child,
+.box7of8:last-child,
+.box8of8:last-child {margin-right:0;}
+.boxcenter {margin: 0 auto 0 auto;}
+
+/*START PARAGRAPH*/
+.box p + p {margin-top: 20px;}
+.box ul {list-style: none; margin-left: 10px;}
+
+/*START MARGINS*/
+.martop {margin-top: 20px;}
+.marbottom {margin-bottom: 20px;}
+.marleft {margin-left: 20px;}
+.marright {margin-right: 20px;}
+.martop3 {margin-top: 30px;}
+.marbottom3 {margin-bottom: 30px;}
+.marleft3 {margin-left: 30px;}
+.marright3 {margin-right: 30px;}
+.martop4 {margin-top: 40px;}
+.marbottom4 {margin-bottom: 40px;}
+.marleft4 {margin-left: 40px;}
+.marright4 {margin-right: 40px;}
+
+/*START CLEARFIX*/
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+
+/*START CLEARFIX*/
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+
+/*START ACCESIBILITY*/
+/*Default outline styling, for accessibility*/
+:focus {
+  outline: #08f auto 2px;
+}
+
+/*START MODAL*/
+body.modal {
+	overflow: hidden;
+}
+
+.modalMain {
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transition: 300ms;
+}
+
+.modalMain.open {
+	opacity: 1;
+	visibility: visible;
+	transition: 400ms;
+}
+
+.modalMain .modalWrap {
+	background: #fff;
+	border-radius: 4px;
+	max-width: 400px;
+	min-height: 200px;
+	margin: auto;
+	position: absolute;
+	right: 15px;
+	left: 15px;
+	top: 15%;
+	box-shadow: 0px 3px 7px -4px #000;
+	transition: 250ms;
+}
+
+.modalMain .modalWrap.medium {
+	max-width: 700px;
+}
+
+.modalMain .modalWrap.large {
+	max-width: 1000px;
+}
+
+.modalMain.open .modalWrap {
+	top: 20%;
+	transition: 250ms;
+}
+
+.modalMain .modalWrap input {
+	margin: 5px 0 15px;
+}
+
+.modalMain .modalWrap button,
+.modalMain .modalWrap .button {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.modalMain .modalWrap .forgot {
+	margin-left: 20px;
+}
+
+.modalHead {padding: 15px; border-bottom: 1px solid #e2e2e2;}
+.modalHead h1 {font-size: 28px; display: inline-block;}
+.modalHead .closeModal {cursor: pointer; float: right; top: 2px;}
+.modalHead .closeModal i {margin: 0; margin-left: 5px;}
+.modalHead .closeModal:hover i {opacity: 0.8;}
+.modalContent {padding: 15px;}
+.modalContent p {margin: 0;}
+.modalContent p + p {margin-top: 10px;}
+
+/*START SPECIAL BOXES*/
+.specialBoxes {font-size: 0px; display: inline-block; width: 100%;}
+.specialBoxes .sbox {float: left; display: inline-block; font-size: 0;}
+.specialBoxes .sbox.we4 {width: 100%;}
+.specialBoxes .sbox.we3 {width: 75%;}
+.specialBoxes .sbox.we2 {width: 50%;}
+.specialBoxes .sbox.we1 {width: 25%;}
+.specialBoxes .sbox.he2 {height: 300px;}
+.specialBoxes .sbox.he1 {height: 150px;}
+
+/*----- END GLOBAL CSS -----*/
