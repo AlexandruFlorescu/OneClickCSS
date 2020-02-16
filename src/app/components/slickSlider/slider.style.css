@@ -6,7 +6,6 @@ img {
   .container {
     height:100%;
     overflow: hidden;
-    display:flex;
     justify-content: center;
     align-items: center;
   }
@@ -24,7 +23,9 @@ img {
     cursor: pointer;
   }
   
-  
+  .page-text[_ngcontent-why-c4]{
+    margin-top: 70% !important;
+  }
   
   .slide-button:hover, .slide-button-select {
     width: 64px !important;
@@ -35,26 +36,27 @@ img {
   
   
   .slide-button {
-    width: 30px;
-    height: 4px;
+    width: 25px !important;
+    height: 25px;
     background-color: #3873bd;
     cursor: pointer;
     position: absolute;
+    border-radius: 50%;
   
   }
   
   .slider {
     position: absolute;
-    top: 50%;
-    right: 80px;
+    top: 800px;
+    right: 50%;
     opacity: 1;
     min-width: 30px;
-  
+    display: inline-flex;
   }
   
   .slide-button-parent-container {
     position: relative;
-    margin: 22px 0;
+    margin: 22px 25px;
     min-height: 4px;
   }
   
@@ -63,7 +65,6 @@ img {
   }
   
   .text-container {
-  
     height: 100vh;
     justify-content: center;
     display: flex;
@@ -73,17 +74,18 @@ img {
   
   .page-text {
     min-height: 373px;
-    width: 50%;
     height: 100%;
     opacity: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 90px;
     color: white;
+    margin-top: 80%;
   }
   
   .selected {
     opacity: 1;
     transition: 1s;
+    background-color:#ffffff5c
   }
   
   

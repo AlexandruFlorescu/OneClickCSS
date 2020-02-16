@@ -172,6 +172,7 @@ button.link {
 	width: 100%;
 	max-width: 1280px;
 	margin: auto;
+	height: 1000px !important;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -518,6 +519,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    color: black
 }
 
 /* HTML5 display-role reset for older browsers */
