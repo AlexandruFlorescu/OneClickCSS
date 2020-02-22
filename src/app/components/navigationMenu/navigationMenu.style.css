@@ -1,0 +1,54 @@
+/*start TOP RIGHT MENU*/
+.rightMenu {
+	float: right;
+	margin-top: 15px;
+}
+
+.rightMenu i {
+  font-size: 18px;
+  color: #fff;
+	margin-right: 10px;
+}
+
+.rightMenu button {
+  margin-left: 20px;
+}
+
+.rightMenu button i {
+  position: relative;
+  top: 2px;
+  color: #4868B8;
+  font-size: 18px;
+  margin-right: 5px;
+  transition: 250ms;
+}
+
+.rightMenu button:hover i {
+  transition: 250ms;
+  color: #175fc5;
+}
+
+.rightMenu a {
+	display: inline-block;
+}
+
+.myAccount {
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.announceButton {
+	color: #fff;
+	background: #4868B8;
+	border-radius: 4px;
+	padding: 10px 15px;
+	transition: 250ms;
+}
+
+.announceButton:hover {
+	color: #fff;
+  background: #175fc5;
+  text-decoration: none;
+  transition: 250ms;
+}
+/*end TOP RIGHT MENU*/

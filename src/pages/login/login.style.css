@@ -8,3 +8,40 @@
 	margin: 0 20px;
 	max-width: 400px;
 }
+
+.loginregwrap {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.loginregwrap > h2 {
+  color: #3a3a3a;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.loginregwrap form {
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+}
+
+.loginregwrap form .form-group {
+  margin-bottom: 0;
+}
+
+.loginregwrap form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #454545;
+}
+
+.loginregwrap form .form-group input {
+  display: inline-block;
+}
+
+.loginregwrap form .form-group + .form-group {
+  margin-top: 20px;
+}

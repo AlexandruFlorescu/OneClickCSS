@@ -69,7 +69,7 @@
 }
 .linkBox{
 	display: inline-grid;
-	margin: 50px
+	/*margin: 50px*/
 }
 
 @media screen and (max-width: 768px) {
@@ -85,12 +85,12 @@
 }
 
 .linkBox ul li + li {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .linkBox ul li a {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	color: #000;
 	opacity: 0.8;
@@ -105,14 +105,15 @@
 ::content #new_share_icons, ::content #retele-sociale, ::content #share-gplus, ::content #shareRail, ::content #sharebar-wrapper, ::content #sidebarShare, ::content #social-float-block, ::content #social-share-video, ::content #socialLogos, ::content #social_cont, ::content #socialcount, ::content #storyShareButton, ::content #twitter-badge, ::content #w_twitter_wrapper, ::content .GPlusOne, ::content .Share_Icons, ::content .a-icon-share-pinterest, ::content .art19-social-share, ::content .article-social-share, ::content .at-icon-pinterest_share, ::content .barcelona-widget-facebook-box, ::content .block-socialsharingblock, ::content .btFacebook, ::content .bu-share, ::content .c-socialshare, ::content .comment_share_link, ::content .cresta-share-icon, ::content .digg-module, ::content .elementor-social-icons-wrapper, ::content .facebookButtonDiv, ::content .favicon-tumblr, ::content .fb_all_inner, ::content .fi-icon-twitter, ::content .fodicon-tumblr, ::content .followSocial, ::content .footer-global-social-instagram, ::content .footerSocials, ::content .ftr_social_links, ::content .global-footer__social-link, ::content .gs_social_signals, ::content .header-social-media, ::content .hp-social, ::content .ico-twttr, ::content .icon-google-plus-2, ::content .icon-social-instagram, ::content .inline-share, ::content .jwsharethis, ::content .likegate, ::content .m-btn-youtube, ::content .masthead-club__social, ::content .mini-social-icons, ::content .mvp-post-soc-pin, ::content .new_sharebar_bookmark, ::content .page-header-social, ::content .pin-button, ::content .post-share-element, ::content .qf_socials, ::content .round-btn-share, ::content .secondarySahre, ::content .share-button-inpage, ::content .share-label, ::content .share-this-content, ::content .shareFix, ::content .share__youtube, ::content .share_trigger, ::content .shareplatform, ::content .sharing-links--story, ::content .sideShareContainer, ::content .site-header-nav__social-icon, ::content .soc-menu, ::content .social-bar-sticky, ::content .social-displayer, ::content .social-icons-c, ::content .social-media-container, ::content .social-prompt--btn, ::content .social-sticky-bar, ::content .socialButtonv1, ::content .socialNetworkButtons, ::content .social_btm, ::content .social_pinterest, ::content .socialfancysliderHead, ::content .socialsider, ::content .ss-twitter, ::content .story-rail-twitter, ::content .szoSocialMediaShare, ::content .tmo-share, ::content .tsso_likeshare_box, ::content .twitter-shares, ::content .twitterlink, ::content .util-bar-btn-share, ::content .vod_share, ::content .widget_facebook_like_box, ::content .wk-twitter, ::content .youtube-icon-small, ::content [title^="Follow me on "], ::content a[href^="http://www.wykop.pl/dodaj?url="], ::content a[title="Share by Email"], ::content div[class^="shareButton_"], ::content img[alt^="Follow Me on Pinterest"], ::content #Follow_Buttons, ::content #amp-social-share, ::content #block-ex_article-homepage_facebook_block, ::content #byline-facebook-share, ::content #divShareBarButtons, ::content #facebookShareButton, ::content #fbPopupBG, ::content #follow-twitter, ::content #footerSocialLinks, ::content #header-social-nav, ::content #js-article-share-top, ::content #menu-cuckoo-social-menu, ::content #news-detail-social-top, ::content #rg-share-f, ::content #share-in-content, ::content #shareShelf, ::content #sharebarTop, ::content #sidebar_share, ::content #social-follow, ::content #social-sharing, ::content #socialMedia-linkedin, ::content #social_fb, ::content #socialdock, ::content #story_social_buttons, ::content #twitter-button-content, ::content #watch-social, ::content .GlobalFooterSocialIcons, ::content .Sharer, ::content .a-share, ::content .addthis_horizontal, ::content .art_shr_top, ::content .article-social-tools, ::content .at-share-v, ::content .bb-nav-social-container, ::content .blockSocialLink, ::content .bt_facebook, ::content .buha-icon--vimeo, ::content .c-teaser_shareLink, ::content .comments-share, ::content .cs-social-icon, ::content .diggShare, ::content .email-share, ::content .fa-twitter-square, ::content .facebookCountDiv, ::content .fb-activity-module, ::content .fi-social-google-plus, ::content .follow-author-mini, ::content .followUs-block, ::content .footer-global-social-youtube, ::content .footer__content-social, ::content .full_share_container, ::content .global_sharing_controls, ::content .gsn-social-sidebar, ::content .header-social-shim, ::content .hp_box-social, ::content .icoFacebookBig, ::content .icon-google-plus-round, ::content .icon-social-linkedin-green, ::content .icon_linkedin, ::content .inline-share-btn-twitter, ::content .janrainEngagePublishShareBar, ::content .kindleWidget, ::content .likegate-v2, ::content .m-feature-social-buttons, ::content .masthead-social, ::content .mini-social-share-list, ::content .mvp_facebook_widget, ::content .new_sharebar_pinterest, ::content .page-product__socials, ::content .pin-it-btn, ::content .qlsocialicons, ::content .rr-share, ::content .section-sharebar, ::content .share-buttons-2, ::content .share-legend, ::content .share-this-page, ::content .shareFrame, ::content .share_arti_srevamp, ::content .share_two, ::content .sharepost, ::content .sharing-option, ::content .side_social_media, ::content .site-header__social-icon, ::content .soc-share, ::content .social-bar-wrapper, ::content .social-expand-control, ::content .social-icons-float, ::content .social-media-follow, ::content .social-right-xs, ::content .social-strip, ::content .socialChannels, ::content .socialNew, ::content .social_btns, ::content .socialfollow, ::content .socialtab_container, ::content .ss_social, ::content .story-share-btns, ::content .t-social-buttons, ::content .toggleSocialBox, ::content .tumblr-icon, ::content .twitter-sidebar-button {
 	display: inline !important;
 }
+
 .footerBottom {
 	padding: 30px 0;
 	background: #4868B8;
-	color: #fff
+  color: #fff;
 }
 
 .footerText {
-	font-size: 17px;
+	font-size: 15px;
 	line-height: normal;
 }
 
@@ -125,6 +126,21 @@
 	}
 }
 
+.footerTop {
+  padding: 50px 0;
+}
+
+.footerTop h2 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.footerTop ul {
+  padding-right: 20px;
+}
+
 .footerSocials ul {
 	text-align: right;
 }
@@ -135,7 +151,7 @@
 		max-width: none;
 		flex: none;
 	}
-	
+
 	.footerSocials ul {
 		text-align: left;
 	}
@@ -147,6 +163,16 @@
 
 .footerSocials ul li + li {
 	margin-left: 20px;
+}
+
+.footerSocials ul li a {
+  opacity: 0.8;
+  transition: 250ms;
+}
+
+.footerSocials ul li a:hover {
+  opacity: 1;
+  transition: 250ms;
 }
 
 .footerSocials ul li a:before {
@@ -165,33 +191,12 @@
 
 .footerSocials ul li a:hover:before {
 	opacity: 1;
-	transition: 250ms;
-	color: white
+  transition: 250ms;
+	color: white;
 }
 
-.footerSocials ul li a.youtube:before {
-	content: "\f16a";
-	color: white
-}
-
-.footerSocials ul li a.facebook:before {
-	content: "\f09a";
-	color: white
-
-}
-
-.footerSocials ul li a.twitter:before {
-	content: "\f099";
-	color: white
-}
-
-.footerSocials ul li a.linkedin:before {
-	content: "\f0e1";
-	color: white
-}
-
-.footerSocials ul li a.googleplus:before {
-	content: "\f0d5";
-	color: white
+.footerSocials ul li a i {
+  font-size: 20px;
+  color: #fff;
 }
 /*--- END FOOTER BOTTOM ---*/

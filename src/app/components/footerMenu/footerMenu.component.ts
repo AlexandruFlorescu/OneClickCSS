@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FooterMenuComponent {
   title = 'OneClickUI';
+  date = new Date().getFullYear();
 }
