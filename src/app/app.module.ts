@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { SearchEngineComponent } from 'src/pages/searchEngine/searchEngine.component';
 import { FooterMenuComponent } from './components/footerMenu/footerMenu.component';
 import { NavigationMenuComponent } from './components/navigationMenu/navigationMenu.component';
@@ -12,11 +12,14 @@ import { SliderComponent } from './components/slickSlider/slider.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { LoginPageComponent } from 'src/pages/login/login.component';
 import { RegisterPageComponent } from 'src/pages/register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClinicDetailPageComponent } from 'src/pages/clinicDetail/clinicDetail.component';
 import { ClientDetailPageComponent } from 'src/pages/clientDetail/clientDetail.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { TabComponent } from './components/tab/tab.component';
+import { JwtInterceptor } from './helpers/jwt.interceptor';
+import { ErrorInterceptor } from './helpers/error.intercepetor';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +36,20 @@ import { TabComponent } from './components/tab/tab.component';
     ClinicDetailPageComponent,
     TabsComponent,
     TabComponent,
+    AlertComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+],
   bootstrap: [AppComponent,  FooterMenuComponent, NavigationMenuComponent,
     ]
 })

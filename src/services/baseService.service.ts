@@ -1,47 +1,44 @@
 import { Observable } from 'rxjs';
 import { Model } from 'src/app/models/model.model';
-import { HttpClient } from '@angular/common/http';
-import { Serializer } from 'src/app/serializers/base.serializer';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Serializer } from '../app/serializers/base.serializer';
 import { map } from 'rxjs/operators';// This is where I import map operator
 
-export class ModelService<T extends Model> {
+export abstract class BaseService<T extends Model> {
     constructor(
-        private httpClient: HttpClient,
-        private url: string,
-        private endpoint: string,
-        private serializer: Serializer) {}
+        private httpClient: HttpClient
+        ) {}
     
-      public create(item: T): Observable<T> {
-        return this.httpClient
-          .post<T>(`${this.url}/${this.endpoint}`, this.serializer.toJson(item))
-          .pipe(map(data => this.serializer.fromJson(data) as T));
+      protected url: string;
+      protected abstract endpoint: string;
+      protected headers: HttpHeaders;
+
+      private get getApiEndpoint(): string {
+        return `${this.url}/${this.url}`;
       }
     
-      public update(item: T): Observable<T> {
-        return this.httpClient
-          .put<T>(`${this.url}/${this.endpoint}/${item.id}`,
-            this.serializer.toJson(item))
-          .pipe(map(data => this.serializer.fromJson(data) as T));
+      protected nameof<U>(key: keyof U, instance?: U): keyof U {
+        return key;
       }
     
-      read(id: number): Observable<T> {
-        return this.httpClient
-          .get(`${this.url}/${this.endpoint}/${id}`)
-          .pipe(map((data: any) => this.serializer.fromJson(data) as T));
+      protected getBase<T>(apiAction: string = '', id?: number | string, ): Observable<T> {
+        return this.httpClient.get<T>(`${this.getApiEndpoint}${apiAction ? ('/' + apiAction) : ''}${id ? '/' + id : ''}`, { withCredentials: true });
       }
     
-      list(): Observable<T[]> {
-        return this.httpClient
-          .get(`${this.url}/${this.endpoint}`)
-          .pipe(map((data: any) => this.convertData(data.items)));
+      protected putBase<T>(body?: any, id?: number | string, apiAction: string = '') {
+        return this.httpClient.put<T>(`${this.getApiEndpoint}${id ? '/' + id : ''}${apiAction ? ('/' + apiAction) : ''}`, body, { headers: this.headers, withCredentials: true });
       }
     
-      delete(id: number) {
-        return this.httpClient
-          .delete(`${this.url}/${this.endpoint}/${id}`);
+      protected postBase<T>(body?: any, apiAction: string = ''): Observable<T> {
+        return this.httpClient.post<T>(`${this.getApiEndpoint}${apiAction ? ('/' + apiAction) : ''}`, body, { headers: this.headers, withCredentials: true });
       }
     
-      private convertData(data: any): T[] {
-        return data.map(item => this.serializer.fromJson(item));
+      protected getByIdBase<T>(id: number | string, apiAction: string = ''): Observable<T> {
+        return this.httpClient.get<T>(`${this.getApiEndpoint}${apiAction ? ('/' + apiAction) : ''}/${id}`, { withCredentials: true });
       }
+    
+      protected deleteBase<T>(params?: string): Observable<T> {
+        return this.httpClient.delete<T>(`${this.getApiEndpoint}/${params}`, { withCredentials: true });
+      }
+    
     }

@@ -905,4 +905,8 @@ body.modal {
 .specialBoxes .sbox.he2 {height: 300px;}
 .specialBoxes .sbox.he1 {height: 150px;}
 
+a{
+	cursor:pointer;
+}
+
 /*----- END GLOBAL CSS -----*/
