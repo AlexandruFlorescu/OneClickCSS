@@ -20,6 +20,7 @@ import { TabComponent } from './components/tab/tab.component';
 import { JwtInterceptor } from './helpers/jwt.interceptor';
 import { ErrorInterceptor } from './helpers/error.intercepetor';
 import { AlertComponent } from './components/alert/alert.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AlertComponent } from './components/alert/alert.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularFontAwesomeModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
