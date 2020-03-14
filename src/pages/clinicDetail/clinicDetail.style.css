@@ -1,4 +1,4 @@
-.userPanel {
+/*.userPanel {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -11,7 +11,6 @@
     width: 60%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .leftColumn{
@@ -21,4 +20,183 @@
 .rightColumn{
     width: 500px;
     height: 500px;
+}*/
+
+/*left and right of 10*/
+.item,
+.left,
+.right {
+  display: inline-block;
+  vertical-align: top;
 }
+
+.left.pad {padding-right: 10px;}
+.right.pad {padding-left: 10px;}
+
+.one {width: 10%;}
+.two {width: 20%;}
+.three {width: 30%;}
+.four {width: 40%;}
+.five {width: 50%;}
+.six {width: 60%;}
+.seven {width: 70%;}
+.eight {width: 80%;}
+.nine {width: 90%;}
+.ten {width: 100%;}
+
+/*---START HEADER IMAGE---*/
+.headerImg {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.headerImg h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgb(37,41,50);
+  background: linear-gradient(0deg, rgba(37,41,50,0.76234243697479) 0%, rgba(255,255,255,0) 100%);
+  font-weight: 300;
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: right;
+  padding: 30px 30px 20px 30px;
+}
+
+/*Start Profile*/
+
+.headerImg .profilePic {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+  height: 75px;
+  width: 75px;
+  background: #f2f2f2;
+  padding: 3px;
+}
+
+.headerImg .profilePic .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.headerImg .profilePic .wrap img {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: inline-block;
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+/*Start Parallax*/
+
+.headerImg .parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.headerImg .parallax:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*---END HEADER IMAGE---*/
+
+/*---START USER DETAILS---*/
+.userDetails {
+  padding: 50px 0;
+}
+
+.userDetails h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.userDetails .left > div + div {
+  margin-top: 40px;
+}
+
+/*Start Details*/
+
+.userDetails .details span {
+  display: inline-block;
+  width: 100%;
+}
+
+.userDetails .details span + span {
+  margin-top: 15px;
+}
+
+.userDetails .details span p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.userDetails .details span:last-child p {
+  display: block;
+  margin-left: 0;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/*Start Socials*/
+.userDetails .socials {
+  display: inline-block;
+  width: 100%;
+}
+
+.userDetails .socials span {
+  display: inline-block;
+}
+
+.userDetails .socials span + span {
+  margin-left: 15px;
+}
+
+.userDetails .socials span a {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.userDetails .socials span a:hover i {
+  color: #4868B8;
+}
+
+/*Start Tabs*/
+/*Why these are not targetable???*/
+tabs {
+  display: inline-block;
+  width: 100%;
+}
+
+tabs ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: red;
+}
+/*---END USER DETAILS---*/
